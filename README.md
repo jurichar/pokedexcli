@@ -1,4 +1,4 @@
-# boot.dev
+# pokedex cli
 
 This is a Pokedex in a command-line REPL.
 It uses the [PokeAPI](https://pokeapi.co/) to fetch Pokemon data.

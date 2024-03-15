@@ -8,5 +8,4 @@ func callbackHelp() {
 		fmt.Println(cmd.name, " - ", cmd.description)
 	}
 	fmt.Println()
-
 }

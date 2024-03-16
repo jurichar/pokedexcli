@@ -3,7 +3,6 @@ package main
 import (
 	"errors"
 	"fmt"
-	"log"
 	"math/rand"
 )
 
@@ -17,7 +16,7 @@ func callbackCatch(cfg *config, args ...string) error {
 
 	pokemon, err := cfg.pokeapiClient.GetPokemon(pokemonName)
 	if err != nil {
-		log.Fatal(err)
+		return fmt.Errorf("%s does not exist", pokemonName)
 	}
 
 	fmt.Printf("Throwing a Pokeball at %s...\n", pokemonName)
